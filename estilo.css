@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html,body{
+  height: 100%;
+}
+
 body {
     font-family: Arial, sans-serif;
 }
@@ -174,6 +178,20 @@ body {
     margin: 0 auto;
 }
 
+/*CSS Rhaul:*/
 .margin{
   padding: 30px;
+}
+
+.inicio{
+  width: 100%;
+  height: 70%;
+  background: url(img/tocha.jpeg);
+  background-size: 100% 100%;
+}
+
+@media screen and (max-width: 1018px) {
+  .inicio{
+    height: 60%;
+  }
 }
