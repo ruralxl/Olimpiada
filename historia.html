@@ -14,14 +14,31 @@
 </head>
 <body>
     <header>
-      <div class="topnav" id="myTopnav">
-        <a href="index.html" class="active">Início</a>
-        <a href="#">História</a>
-        <a href="">Eventos</a>
-        <a href="">Notícias</a>
-        <a href="formulario.html">Formulário</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-      </div><!--navbar-->
+      
+  <nav class="navbar navbar-expand-lg bg-danger">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light" href="index.html">Início</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border: none; background: transparent;">
+        <span class="navbar-toggler-icon" style="background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\'><path fill=\'white\' d=\'M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z\'/></svg>');"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-light" style="font-size: 1.25rem;" aria-current="page" href="historia.html">História</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" style="font-size: 1.25rem;" aria-current="page" href="#">Eventos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" style="font-size: 1.25rem;" aria-current="page" href="#">Notícias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" style="font-size: 1.25rem;" href="formulario.html">Formulário</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
     </header>
 
     <div class="inicio"></div><!--inicio-->

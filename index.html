@@ -10,15 +10,31 @@
     <link rel="icon" href="img/olimpiadaicon.png" type="icon">
 </head>
 <body>
-    <div class="topnav" id="myTopnav">
-        <a href="index.html" class="active">Início</a>
-        <a href="historia.html">História</a>
-        <a href="">Eventos</a>
-        <a href="">Notícias</a>
-        <a href="formulario.html">Formulário</a>
-          
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    
+  <nav class="navbar navbar-expand-lg bg-danger">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light" href="index.html">Início</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border: none; background: transparent;">
+        <span class="navbar-toggler-icon" style="background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\'><path fill=\'white\' d=\'M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z\'/></svg>');"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-light" style="font-size: 1.25rem;" aria-current="page" href="historia.html">História</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" style="font-size: 1.25rem;" aria-current="page" href="#">Eventos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" style="font-size: 1.25rem;" aria-current="page" href="#">Notícias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" style="font-size: 1.25rem;" href="formulario.html">Formulário</a>
+          </li>
+        </ul>
       </div>
+    </div>
+  </nav>
 
       <div class="titulo1">
         <img src="img/olimpiadaicon.png" alt="" class="imgolimp">
@@ -121,7 +137,7 @@
                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rayssaModal">
                   Estatísticas
                 </button>
-                <div class="modal fade" id="rayssaModal" tabindex="-1" aria-labelledby="rayssaModalLabel" aria-hidden="true">
+                <div class="modal fade" id="rayssaModal" tabindex="-1" arial-labelledby="rayssaModalLabel" aria-hidden="true">
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
@@ -129,14 +145,11 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
-                        <p>Medalhas: 6🏅</p>
-                        <p>Esporte: Surfe🏄 </p>
-                        <p>Títulos: Tricampeão Mundial do WCT
-                          Maresia Surf Internacional
-                          Super Surf Internacional
-                          Fiji Pro Namotu
-                          Quicksilver Pro
-                          Billabong Pro</p>
+                        <p>Medalhas: 7🏅</p>
+                        <p>Esporte: Skateboard 🛹 </p>
+                        <p>Títulos: Campeã do X Games, Campeã do Skate Park no Campeonato Mundial de Skate, Medalha de Prata nos Jogos Olímpicos de Tóquio 2020 e Medalha de Bronze nos Jogos Olímpicos da França 2024
+                          
+                          </p>
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
@@ -161,7 +174,7 @@
     Estatísticas
   </button>
 
-  <div class="modal fade" id="raphaelModal" tabindex="-1" aria-labelledby="raphaelModalLabel" aria-hidden="true">
+  <div class="modal fade" id="raphaelModal" tabindex="-1" arial-labelledby="raphaelModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
