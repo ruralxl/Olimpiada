@@ -12,292 +12,1456 @@
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="icon" href="img/olimpiadaicon.png" type="icon">
     <title>Cronograma Olímpico</title>
+    <style>
+        .table-container {
+            margin-bottom: 30px;
+        }
+        .table-container h3 {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-danger">
             <div class="container-fluid">
-              <a class="navbar-brand text-light" href="index.html">Início</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border: none; background: transparent;">
-                <span class="navbar-toggler-icon" style="background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\'><path fill=\'white\' d=\'M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z\'/></svg>');"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link text-light" style="font-size: 1.25rem;" aria-current="page" href="historia.html">História</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-light" style="font-size: 1.25rem;" aria-current="page" href="Eventos.html">Eventos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-light" style="font-size: 1.25rem;" aria-current="page" href="#">Notícias</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-light" style="font-size: 1.25rem;" href="formulario.html">Formulário</a>
-                  </li>
-                </ul>
-              </div>
+                <a class="navbar-brand text-light" href="index.html">Início</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border: none; background: transparent;">
+                    <span class="navbar-toggler-icon" style="background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\'><path fill=\'white\' d=\'M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z\'/></svg>');"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" style="font-size: 1.25rem;" aria-current="page" href="historia.html">História</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" style="font-size: 1.25rem;" aria-current="page" href="Eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" style="font-size: 1.25rem;" aria-current="page" href="#">Notícias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" style="font-size: 1.25rem;" href="formulario.html">Formulário</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </nav>
+        </nav>
     </header>
 
-    <!DOCTYPE html>
-    <html lang="pt-BR">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-        </script>
-        <link rel="stylesheet" href="estilo/style.css">
-        <link rel="icon" href="img/olimpiadaicon.png" type="icon">
-        <title>Cronograma Olímpico</title>
-    </head>
-    
-    <body>
-        <div class="container mt-4">
-            <h1 class="text-center">Cronograma de Eventos Olímpicos</h1>
-    
-            <section class="mt-5">
-                <h2>Eventos</h2>
-                <div class="table-responsive">
-                    <table class="table table-bordered">
-                        <thead class="table-dark">
-                            <tr>
-                                <th>Data</th>
-                                <th>Horário</th>
-                                <th>Evento</th>
-                                <th>Local</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!-- Quinta-feira (25) -->
-                            <tr>
-                                <td>Quinta-feira (25)</td>
-                                <td>4h30</td>
-                                <td>Tiro com arco feminino</td>
-                                <td>Circuito de Tiro</td>
-                            </tr>
-                            <tr>
-                                <td>Quinta-feira (25)</td>
-                                <td>9h</td>
-                                <td>Handebol feminino</td>
-                                <td>Arena de Handebol</td>
-                            </tr>
-                            <tr>
-                                <td>Quinta-feira (25)</td>
-                                <td>9h15</td>
-                                <td>Tiro com arco masculino</td>
-                                <td>Circuito de Tiro</td>
-                            </tr>
-                            <tr>
-                                <td>Quinta-feira (25)</td>
-                                <td>14h</td>
-                                <td>Futebol feminino</td>
-                                <td>Vários Estádios</td>
-                            </tr>
-                            <!-- Sexta-feira (26) -->
-                            <tr>
-                                <td>Sexta-feira (26)</td>
-                                <td>14h30</td>
-                                <td>Cerimônia de abertura</td>
-                                <td>Estádio Olímpico</td>
-                            </tr>
-                            <!-- Sábado (27) -->
-                            <tr>
-                                <td>Sábado (27)</td>
-                                <td>3h30</td>
-                                <td>Badminton simples feminino</td>
-                                <td>Arena de Badminton</td>
-                            </tr>
-                            <tr>
-                                <td>Sábado (27)</td>
-                                <td>3h30</td>
-                                <td>Badminton simples masculino</td>
-                                <td>Arena de Badminton</td>
-                            </tr>
-                            <tr>
-                                <td>Sábado (27)</td>
-                                <td>4h</td>
-                                <td>Tiro esportivo carabina</td>
-                                <td>Circuito de Tiro</td>
-                            </tr>
-                            <tr>
-                                <td>Sábado (27)</td>
-                                <td>5h</td>
-                                <td>Remo masculino</td>
-                                <td>Campo de Regatas</td>
-                            </tr>
-                            <tr>
-                                <td>Sábado (27)</td>
-                                <td>4h30</td>
-                                <td>Hipismo CCE/td>
-                                <td>Centro de Hipismo</td>
-                            </tr>
-                            <tr>
-                                <td>Sábado (27)</td>
-                                <td>5h</td>
-                                <td>Judô masculino e feminino</td>
-                                <td>Arena de Judô</td>
-                            </tr>
-                            <tr>
-                                <td>Sábado (27)</td>
-                                <td>5h</td>
-                                <td>Esgrima espada feminino</td>
-                                <td>Centro de Convenções</td>
-                            </tr>
-                            <tr>
-                                <td>Sábado (27)</td>
-                                <td>5h</td>
-                                <td>Remo feminino</td>
-                                <td>Campo de Regatas</td>
-                            </tr>
-                            <tr>
-                                <td>Sábado (27)</td>
-                                <td>5h30</td>
-                                <td>Tiro esportivo pistola de ar</td>
-                                <td>Circuito de Tiro</td>
-                            </tr>
-                            <tr>
-                                <td>Sábado (27)</td>
-                                <td>6h</td>
-                                <td>Ginástica artística masculina:</td>
-                                <td>Arena de Ginástica</td>
-                            </tr>
-                            <tr>
-                                <td>Sábado (27)</td>
-                                <td>6h</td>
-                                <td>Natação</td>
-                                <td>Centro Aquático</td>
-                            </tr>
-                            <tr>
-                                <td>Sábado (27)</td>
-                                <td>7h</td>
-                                <td>Skate street masculino</td>
-                                <td>Parque de Esportes Urbanos</td>
-                            </tr>
-                            <tr>
-                                <td>Sábado (27)</td>
-                                <td>7h</td>
-                                <td>Tênis simples em duplas masculino e feminino</td>
-                                <td>Estádio de Tênis</td>
-                            </tr>
-                            <tr>
-                                <td>Sábado (27)</td>
-                                <td>8h</td>
-                                <td>Vôlei masculino</td>
-                                <td>Arena de Vôlei</td>
-                            </tr>
-                            <tr>
-                                <td>Sábado (27)</td>
-                                <td>9h30</td>
-                                <td>Ciclismo estrada contrarrelógio individual feminino</td>
-                                <td>Rotas de Paris</td>
-                            </tr>
-                            <tr>
-                                <td>Sábado (27)</td>
-                                <td>10h</td>
-                                <td>Tênis de mesa masculino e feminino</td>
-                                <td>Arena de Tênis de Mesa</td>
-                            </tr>
-                            <tr>
-                                <td>Sábado (27)</td>
-                                <td>10h</td>
-                                <td>Canoagem slalom</td>
-                                <td>Circuito de Canoagem</td>
-                            </tr>
-                            <tr>
-                                <td>Sábado (27)</td>
-                                <td>10h30</td>
-                                <td>Boxe masculino e feminino</td>
-                                <td>Centro de Convenções</td>
-                            </tr>
-                            <tr>
-                                <td>Sábado (27)</td>
-                                <td>11h</td>
-                                <td>Judô masculino e feminino</td>
-                                <td>Arena de Judô</td>
-                            </tr>
-                            <tr>
-                                <td>Sábado (27)</td>
-                                <td>11h30</td>
-                                <td>Ciclismo estrada contrarrelógio individual masculino</td>
-                                <td>Rotas de Paris</td>
-                            </tr>
-                            <tr>
-                                <td>Sábado (27)</td>
-                                <td>12h</td>
-                                <td>Skate street masculino</td>
-                                <td>Parque de Esportes Urbanos</td>
-                            </tr>
-                            <tr>
-                                <td>Sábado (27)</td>
-                                <td>12h15</td>
-                                <td>Basquete masculino</td>
-                                <td>Arena de Paris</td>
-                            </tr>
-                            <tr>
-                                <td>Sábado (27)</td>
-                                <td>13h</td>
-                                <td>Handebol feminino</td>
-                                <td>Arena de Handebol</td>
-                            </tr>
-                            <tr>
-                                <td>Sábado (27)</td>
-                                <td>13h</td>
-                                <td>Natação</td>
-                                <td>Centro Aquático</td>
-                            </tr>
-                            <tr>
-                                <td>Sábado (27)</td>
-                                <td>14h</td>
-                                <td>Futebol feminino</td>
-                                <td>Vários Estádios</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-        </div>
-    
-        <footer class="mt-5">
-            <p class="text-center">© 2024 Olimpíadas</p>
-        </footer>
-    
-        <script>
-            function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "topnav";
-                }
-            }
-        </script>
-            </div>
-            <section class="mt-5">
-                <h2>Atletas Participantes Em Destaque</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, nulla provident ut voluptates dignissimos et minus sed molestiae numquam, animi dolorum consequuntur? Perspiciatis ex harum non optio aspernatur obcaecati maiores!:</p>
-                <ul>
-                    <li><strong>Shedow:</strong> Mais forte que sonic</li>
-                    <li><strong>vladmir league of legends:</strong> Russa no topo.</li>
-                    <li><strong>Dancer:</strong> The best.</li>
-                    <li><strong>Mariiiiii:</strong> 15 anos bissexual.</li>
-                </ul>
-            </section>
-        </section>
+    <div class="container mt-4">
+        <h1 class="text-center">Cronograma de Eventos Olímpicos</h1>
 
-        <footer class="footer">
-            <div class="footer-conteudo">
-              <p>&copy; 2024, Olimpíadas França 2024</p>
-              <p>Copyright 2024, todos os direitos reservados</p>
+        <section class="mt-5">
+            <h2>Eventos</h2>
+            
+            <!-- Quinta-feira (25) -->
+            <div class="table-container">
+                <h3>Quinta-feira (25)</h3>
+                <table class="table table-bordered">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Horário</th>
+                            <th>Evento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>4h30</td>
+                            <td>Tiro com arco feminino</td>
+                        </tr>
+                        <tr>
+                            <td>9h</td>
+                            <td>Handebol feminino</td>
+                        </tr>
+                        <tr>
+                            <td>9h15</td>
+                            <td>Tiro com arco masculino</td>
+                        </tr>
+                        <tr>
+                            <td>14h</td>
+                            <td>Futebol feminino</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-        </footer>
-    </div>
-</body>
 
-</html>
+            <!-- Sexta-feira (26) -->
+            <div class="table-container">
+                <h3>Sexta-feira (26)</h3>
+                <table class="table table-bordered">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Horário</th>
+                            <th>Evento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>14h30</td>
+                            <td>Cerimônia de abertura</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Sábado (27) -->
+            <div class="table-container">
+                <h3>Sábado (27)</h3>
+                <table class="table table-bordered">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Horário</th>
+                            <th>Evento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>3h30</td>
+                            <td>Badminton simples feminino</td>
+                        </tr>
+                        <tr>
+                            <td>3h30</td>
+                            <td>Badminton simples masculino</td>
+                        </tr>
+                        <tr>
+                            <td>4h</td>
+                            <td>Tiro esportivo carabina</td>
+                        </tr>
+                        <tr>
+                            <td>5h</td>
+                            <td>Remo masculino</td>
+                        </tr>
+                        <tr>
+                            <td>4h30</td>
+                            <td>Hipismo</td>
+                        </tr>
+                        <tr>
+                            <td>5h</td>
+                            <td>Judô masculino e feminino</td>
+                        </tr>
+                        <tr>
+                            <td>5h</td>
+                            <td>Esgrima espada feminino</td>
+                        </tr>
+                        <tr>
+                            <td>5h</td>
+                            <td>Remo feminino</td>
+                        </tr>
+                        <tr>
+                            <td>5h30</td>
+                            <td>Tiro esportivo pistola de ar</td>
+                        </tr>
+                        <tr>
+                            <td>6h</td>
+                            <td>Ginástica artística masculina</td>
+                        </tr>
+                        <tr>
+                            <td>6h</td>
+                            <td>Natação</td>
+                        </tr>
+                        <tr>
+                            <td>7h</td>
+                            <td>Skate street masculino</td>
+                        </tr>
+                        <tr>
+                            <td>7h</td>
+                            <td>Tênis simples em duplas masculino e feminino</td>
+                        </tr>
+                        <tr>
+                            <td>8h</td>
+                            <td>Vôlei masculino</td>
+                        </tr>
+                        <tr>
+                            <td>9h30</td>
+                            <td>Ciclismo estrada contrarrelógio individual feminino</td>
+                        </tr>
+                        <tr>
+                            <td>10h</td>
+                            <td>Tênis de mesa masculino e feminino</td>
+                        </tr>
+                        <tr>
+                            <td>10h</td>
+                            <td>Canoagem slalom</td>
+                        </tr>
+                        <tr>
+                            <td>10h30</td>
+                            <td>Boxe masculino e feminino</td>
+                        </tr>
+                        <tr>
+                            <td>11h</td>
+                            <td>Judô masculino e feminino</td>
+                        </tr>
+                        <tr>
+                            <td>11h30</td>
+                            <td>Ciclismo estrada contrarrelógio individual masculino</td>
+                        </tr>
+                        <tr>
+                            <td>12h</td>
+                            <td>Skate street masculino</td>
+                        </tr>
+                        <tr>
+                            <td>12h15</td>
+                            <td>Basquete masculino</td>
+                        </tr>
+                        <tr>
+                            <td>13h</td>
+                            <td>Handebol feminino</td>
+                        </tr>
+                        <tr>
+                            <td>13h</td>
+                            <td>Natação</td>
+                        </tr>
+                        <tr>
+                            <td>13h30</td>
+                            <td>Boxe masculino e feminino</td>
+                        </tr>
+                        <tr>
+                            <td>14h</td>
+                            <td>Vôlei de praia masculino</td>
+                        </tr>
+                        <tr>
+                            <td>14h</td>
+                            <td>Esgrima espada feminino</td>
+                        </tr>
+                        <tr>
+                            <td>14h30</td>
+                            <td>Taekwondo feminino</td>
+                        </tr>
+                        <tr>
+                            <td>15h</td>
+                            <td>Basquete masculino</td>
+                        </tr>
+                        <tr>
+                            <td>15h</td>
+                            <td>Taekwondo feminino</td>
+                        </tr>
+                        <tr>
+                            <td>15h</td>
+                            <td>Hóquei sobre grama feminino</td>
+                        </tr>
+                        <tr>
+                            <td>15h</td>
+                            <td>Vôlei feminino</td>
+                        </tr>
+                        <tr>
+                            <td>21h</td>
+                            <td>Futebol masculino</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Domingo (28) -->
+            <div class="table-container">
+                <h3>Domingo (28)</h3>
+                <table class="table table-bordered">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Horário</th>
+                            <th>Evento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>3h30</td>
+                            <td>Badminton simples feminino: Juliana Vieira</td>
+                        </tr>
+                        <tr>
+                            <td>3h30</td>
+                            <td>Badminton simples masculino: Ygor Coelho</td>
+                        </tr>
+                        <tr>
+                            <td>4h</td>
+                            <td>Handebol feminino: Brasil x Hungria</td>
+                        </tr>
+                        <tr>
+                            <td>4h15</td>
+                            <td>Tiro esportivo carabina feminina: Geovana Meyer</td>
+                        </tr>
+                        <tr>
+                            <td>5h30</td>
+                            <td>Tiro esportivo pistola de ar: final</td>
+                        </tr>
+                        <tr>
+                            <td>4h30</td>
+                            <td>Esgrima florete feminino: Mariana Pistoia</td>
+                        </tr>
+                        <tr>
+                            <td>4h30</td>
+                            <td>Ginástica artística feminina: Flávia Saraiva, Jade Barbosa, Júlia Soares, Lorrane Oliveira e Rebeca Andrade</td>
+                        </tr>
+                        <tr>
+                            <td>4h30</td>
+                            <td>Remo single skiff</td>
+                        </tr>
+                        <tr>
+                            <td>5h</td>
+                            <td>Judô masculino e feminino</td>
+                        </tr>
+                        <tr>
+                            <td>5h</td>
+                            <td>Tênis de mesa masculino e feminino</td>
+                        </tr>
+                        <tr>
+                            <td>5h30</td>
+                            <td>Hipismo CCE: equipes e individual</td>
+                        </tr>
+                        <tr>
+                            <td>6h</td>
+                            <td>Natação</td>
+                        </tr>
+                        <tr>
+                            <td>6h</td>
+                            <td>Boxe masculino e feminino</td>
+                        </tr>
+                        <tr>
+                            <td>6h</td>
+                            <td>Vôlei de praia feminino</td>
+                        </tr>
+                        <tr>
+                            <td>7h</td>
+                            <td>Skate street feminino: Rayssa Leal, Gabriela Mazetto e Pâmela Rosa</td>
+                        </tr>
+                        <tr>
+                            <td>7h</td>
+                            <td>Tênis simples masculino e feminino</td>
+                        </tr>
+                        <tr>
+                            <td>7h</td>
+                            <td>Vela</td>
+                        </tr>
+                        <tr>
+                            <td>9h10</td>
+                            <td>Ciclismo mountain bike feminino: Raiza Goulão</td>
+                        </tr>
+                        <tr>
+                            <td>10h30</td>
+                            <td>Canoagem slalom feminino: Ana Sátila</td>
+                        </tr>
+                        <tr>
+                            <td>11h</td>
+                            <td>Vôlei de praia feminino</td>
+                        </tr>
+                        <tr>
+                            <td>11h</td>
+                            <td>Judô masculino e feminino: ouro</td>
+                        </tr>
+                        <tr>
+                            <td>12h</td>
+                            <td>Rugby feminino: França x Brasil</td>
+                        </tr>
+                        <tr>
+                            <td>12h</td>
+                            <td>Futebol feminino: Brasil x Japão</td>
+                        </tr>
+                        <tr>
+                            <td>12h</td>
+                            <td>Skate street feminino: final</td>
+                        </tr>
+                        <tr>
+                            <td>12h42</td>
+                            <td>Canoagem slalom feminino: final</td>
+                        </tr>
+                        <tr>
+                            <td>14h</td>
+                            <td>Surfe feminino</td>
+                        </tr>
+                        <tr>
+                            <td>15h</td>
+                            <td>Rugby feminino: EUA x Brasil</td>
+                        </tr>
+                        <tr>
+                            <td>16h</td>
+                            <td>Vôlei de praia masculino</td>
+                        </tr>
+                        <tr>
+                            <td>18h40</td>
+                            <td>Surfe masculino</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Segunda-feira (29) -->
+            <div class="table-container">
+                <h3>Segunda-feira (29)</h3>
+                <table class="table table-bordered">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Horário</th>
+                            <th>Evento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>4h15</td>
+                            <td>Tiro Esportivo pistola de ar: Philipe Chateaubrian</td>
+                        </tr>
+                        <tr>
+                            <td>4h15</td>
+                            <td>Tiro esportivo carabina feminina: final</td>
+                        </tr>
+                        <tr>
+                            <td>4h55</td>
+                            <td>Esgrima florete masculino: Guilherme Toldo</td>
+                        </tr>
+                        <tr>
+                            <td>5h</td>
+                            <td>Judô masculino e feminino</td>
+                        </tr>
+                        <tr>
+                            <td>5h</td>
+                            <td>Tênis de mesa masculino e feminino</td>
+                        </tr>
+                        <tr>
+                            <td>5h10</td>
+                            <td>Badminton simples feminino: Juliana Vieira</td>
+                        </tr>
+                        <tr>
+                            <td>6h</td>
+                            <td>Badminton simples masculino: Ygor Coelho</td>
+                        </tr>
+                        <tr>
+                            <td>6h</td>
+                            <td>Natação</td>
+                        </tr>
+                        <tr>
+                            <td>6h</td>
+                            <td>Hipismo CCE individual</td>
+                        </tr>
+                        <tr>
+                            <td>7h</td>
+                            <td>Tênis simples masculino e feminino</td>
+                        </tr>
+                        <tr>
+                            <td>7h15</td>
+                            <td>Vela</td>
+                        </tr>
+                        <tr>
+                            <td>8h</td>
+                            <td>Vôlei feminino: Brasil x Quênia</td>
+                        </tr>
+                        <tr>
+                            <td>9h10</td>
+                            <td>Ciclismo mountain bike masculino: Ulan Bastos</td>
+                        </tr>
+                        <tr>
+                            <td>10h</td>
+                            <td>Rugby feminino: Japão x Brasil</td>
+                        </tr>
+                        <tr>
+                            <td>10h30</td>
+                            <td>Canoagem slalom masculino: Pedro Gonçalves</td>
+                        </tr>
+                        <tr>
+                            <td>11h</td>
+                            <td>Judô masculino e feminino: ouro</td>
+                        </tr>
+                        <tr>
+                            <td>12h30</td>
+                            <td>Ginástica artística por equipes masculina: final</td>
+                        </tr>
+                        <tr>
+                            <td>14h</td>
+                            <td>Surfe masculino</td>
+                        </tr>
+                        <tr>
+                            <td>15h</td>
+                            <td>Tênis de mesa masculino e feminino</td>
+                        </tr>
+                        <tr>
+                            <td>15h40</td>
+                            <td>Natação 200m livre masculino e feminino: final</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Terça-feira (30) -->
+<div class="table-container">
+    <h3>Terça-feira (30)</h3>
+    <table class="table table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Horário</th>
+                <th>Evento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>3h</td>
+                <td>Triatlo masculino: Manoel Messias e Miguel Hidalgo</td>
+            </tr>
+            <tr>
+                <td>3h30</td>
+                <td>Badminton simples feminino: Juliana Vieira</td>
+            </tr>
+            <tr>
+                <td>5h</td>
+                <td>Judô masculino e feminino</td>
+            </tr>
+            <tr>
+                <td>5h</td>
+                <td>Tênis de mesa masculino e feminino</td>
+            </tr>
+            <tr>
+                <td>6h</td>
+                <td>Badminton simples masculino: Ygor Coelho</td>
+            </tr>
+            <tr>
+                <td>6h</td>
+                <td>Hipismo adestramento: João Victor Oliva</td>
+            </tr>
+            <tr>
+                <td>6h</td>
+                <td>Natação</td>
+            </tr>
+            <tr>
+                <td>7h</td>
+                <td>Vôlei de praia masculino</td>
+            </tr>
+            <tr>
+                <td>7h</td>
+                <td>Tênis simples masculino e feminino: segunda Rodada</td>
+            </tr>
+            <tr>
+                <td>7h</td>
+                <td>Tiro com arco: Marcus D´almeida e Ana Luiza Caetano</td>
+            </tr>
+            <tr>
+                <td>7h</td>
+                <td>Vela</td>
+            </tr>
+            <tr>
+                <td>8h</td>
+                <td>Boxe feminino</td>
+            </tr>
+            <tr>
+                <td>8h30</td>
+                <td>Tênis de mesa duplas mistas: bronze e ouro</td>
+            </tr>
+            <tr>
+                <td>10h</td>
+                <td>Canoagem slalom individual feminino: Ana Sátila</td>
+            </tr>
+            <tr>
+                <td>10h</td>
+                <td>Ciclismo BMX freestyle: Gustavo Bala Loka</td>
+            </tr>
+            <tr>
+                <td>11h</td>
+                <td>Vôlei de praia feminino</td>
+            </tr>
+            <tr>
+                <td>11h</td>
+                <td>Judô masculino e feminino: ouro</td>
+            </tr>
+            <tr>
+                <td>12h30</td>
+                <td>Boxe feminino</td>
+            </tr>
+            <tr>
+                <td>13h15</td>
+                <td>Ginástica artística por equipes feminina: final</td>
+            </tr>
+            <tr>
+                <td>14h</td>
+                <td>Handebol feminino: França x Brasil</td>
+            </tr>
+            <tr>
+                <td>14h</td>
+                <td>Rugby feminino: bronze</td>
+            </tr>
+            <tr>
+                <td>14h45</td>
+                <td>Rugby feminino: ouro</td>
+            </tr>
+            <tr>
+                <td>16h</td>
+                <td>Vôlei de praia feminino</td>
+            </tr>
+            <tr>
+                <td>16h</td>
+                <td>Basquete masculino: Brasil x Alemanha</td>
+            </tr>
+            <tr>
+                <td>16h</td>
+                <td>Natação: 800m livre e revezamento 4×200 livre masculino: finais</td>
+            </tr>
+            <tr>
+                <td>21h10</td>
+                <td>Surfe masculino: bronze</td>
+            </tr>
+            <tr>
+                <td>21h50</td>
+                <td>Surfe feminino: bronze</td>
+            </tr>
+            <tr>
+                <td>22h30</td>
+                <td>Surfe masculino ouro</td>
+            </tr>
+            <tr>
+                <td>23h15</td>
+                <td>Surfe feminino: ouro</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Quarta-feira (31) -->
+<div class="table-container">
+    <h3>Quarta-feira (31)</h3>
+    <table class="table table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Horário</th>
+                <th>Evento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>3h</td>
+                <td>Triatlo feminino: Djenyfer Arnold e Vittoria Lopes</td>
+            </tr>
+            <tr>
+                <td>3h30</td>
+                <td>Badminton simples feminino: Juliana Vieira</td>
+            </tr>
+            <tr>
+                <td>3h30</td>
+                <td>Badminton simples masculino: Ygor Coelho</td>
+            </tr>
+            <tr>
+                <td>4h</td>
+                <td>Vôlei masculino: Polônia x Brasil</td>
+            </tr>
+            <tr>
+                <td>5h</td>
+                <td>Hipismo adestramento: João Victor Oliva</td>
+            </tr>
+            <tr>
+                <td>5h</td>
+                <td>Judô</td>
+            </tr>
+            <tr>
+                <td>5h</td>
+                <td>Tênis de mesa masculino e feminino</td>
+            </tr>
+            <tr>
+                <td>6h</td>
+                <td>Natação</td>
+            </tr>
+            <tr>
+                <td>7h</td>
+                <td>Tiro com arco: Marcus D´almeida e Ana Luiza Caetano</td>
+            </tr>
+            <tr>
+                <td>7h15</td>
+                <td>Vela</td>
+            </tr>
+            <tr>
+                <td>9h45</td>
+                <td>Ciclismo BMX Freestyle: final</td>
+            </tr>
+            <tr>
+                <td>10h30</td>
+                <td>Canoagem slalom individual feminino: Ana Sátila</td>
+            </tr>
+            <tr>
+                <td>11h</td>
+                <td>Judô masculino e feminino: ouro</td>
+            </tr>
+            <tr>
+                <td>12h</td>
+                <td>Futebol feminino: Brasil x Espanha</td>
+            </tr>
+            <tr>
+                <td>12h30</td>
+                <td>Ginástica artística individual geral masculina: final</td>
+            </tr>
+            <tr>
+                <td>15h</td>
+                <td>Vôlei de praia masculino</td>
+            </tr>
+            <tr>
+                <td>15h30</td>
+                <td>Natação: 2000m borboleta, 100m livre masculino e 1500m livre feminino: finais</td>
+            </tr>
+            <tr>
+                <td>17h</td>
+                <td>Boxe feminino</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!-- Quinta-feira (1) -->
+<div class="table-container">
+    <h3>Quinta-feira (1)</h3>
+    <table class="table table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Horário</th>
+                <th>Evento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2h30</td>
+                <td>Atletismo marcha atlética masculina: Caio Bonfim e Matheus Corrêa</td>
+            </tr>
+            <tr>
+                <td>3h30</td>
+                <td>Badminton simples masculino: oitavas de final</td>
+            </tr>
+            <tr>
+                <td>4h</td>
+                <td>Handebol feminino: Holanda x Brasil</td>
+            </tr>
+            <tr>
+                <td>4h30</td>
+                <td>Atletismo marcha atlética feminina: Érica Sena, Viviane Lyra e Gabriela Muniz</td>
+            </tr>
+            <tr>
+                <td>4h30</td>
+                <td>Tiro com arco: Marcus D´almeida e Ana Luiza Caetano</td>
+            </tr>
+            <tr>
+                <td>5h</td>
+                <td>Judô masculino e feminino</td>
+            </tr>
+            <tr>
+                <td>6h</td>
+                <td>Hipismo saltos por equipes</td>
+            </tr>
+            <tr>
+                <td>6h</td>
+                <td>Natação</td>
+            </tr>
+            <tr>
+                <td>7h</td>
+                <td>Tênis simples feminino: semifinal</td>
+            </tr>
+            <tr>
+                <td>8h</td>
+                <td>Vôlei feminino: Brasil x Japão</td>
+            </tr>
+            <tr>
+                <td>9h40</td>
+                <td>Vela: finais</td>
+            </tr>
+            <tr>
+                <td>10h</td>
+                <td>Vôlei de praia masculino</td>
+            </tr>
+            <tr>
+                <td>11h</td>
+                <td>Judô masculino e feminino: ouro</td>
+            </tr>
+            <tr>
+                <td>13h15</td>
+                <td>Ginástica artística individual geral feminino: final</td>
+            </tr>
+            <tr>
+                <td>13h30</td>
+                <td>Badminton simples feminino: oitavas de final</td>
+            </tr>
+            <tr>
+                <td>15h</td>
+                <td>Vôlei de praia feminino</td>
+            </tr>
+            <tr>
+                <td>15h20</td>
+                <td>Ciclismo BMX racing feminino: Paola Reis</td>
+            </tr>
+            <tr>
+                <td>16h40</td>
+                <td>Natação: revezamento 4×200 livre feminino: final</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Sexta-feira (2) -->
+<div class="table-container">
+    <h3>Sexta-feira (2)</h3>
+    <table class="table table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Horário</th>
+                <th>Evento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>4h30</td>
+                <td>Tiro com arco duplas mistas: oitavas de final</td>
+            </tr>
+            <tr>
+                <td>5h</td>
+                <td>Judô masculino e feminino</td>
+            </tr>
+            <tr>
+                <td>5h</td>
+                <td>Atletismo</td>
+            </tr>
+            <tr>
+                <td>6h</td>
+                <td>Basquete masculino: Japão x Brasil</td>
+            </tr>
+            <tr>
+                <td>6h</td>
+                <td>Natação</td>
+            </tr>
+            <tr>
+                <td>7h</td>
+                <td>Ginástica de trampolim feminino: Camilla Lopes</td>
+            </tr>
+            <tr>
+                <td>7h</td>
+                <td>Tênis: finais</td>
+            </tr>
+            <tr>
+                <td>8h</td>
+                <td>Vôlei masculino: Brasil x Egito</td>
+            </tr>
+            <tr>
+                <td>9h</td>
+                <td>Hipismo saltos por equipe: final</td>
+            </tr>
+            <tr>
+                <td>9h</td>
+                <td>Vela: finais</td>
+            </tr>
+            <tr>
+                <td>11h</td>
+                <td>Judô masculino e feminino: ouro</td>
+            </tr>
+            <tr>
+                <td>12h</td>
+                <td>Vôlei de praia feminino</td>
+            </tr>
+            <tr>
+                <td>13h</td>
+                <td>Ginástica de trampolim masculino: Rayan Castro</td>
+            </tr>
+            <tr>
+                <td>15h15</td>
+                <td>Ciclismo: BMX racing feminino: final</td>
+            </tr>
+            <tr>
+                <td>15h30</td>
+                <td>Natação: 50m livre masculino: final</td>
+            </tr>
+            <tr>
+                <td>16h</td>
+                <td>Vôlei de praia masculino</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Sábado (3) -->
+<div class="table-container">
+    <h3>Sábado (3)</h3>
+    <table class="table table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Horário</th>
+                <th>Evento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>3h</td>
+                <td>Judô masculino e feminino</td>
+            </tr>
+            <tr>
+                <td>4h30</td>
+                <td>Remo feminino: finais</td>
+            </tr>
+            <tr>
+                <td>4h40</td>
+                <td>Remo masculino: finais</td>
+            </tr>
+            <tr>
+                <td>5h</td>
+                <td>Atletismo</td>
+            </tr>
+            <tr>
+                <td>6h</td>
+                <td>Ciclismo estrada masculino: Vinicius Rangel</td>
+            </tr>
+            <tr>
+                <td>6h</td>
+                <td>Natação</td>
+            </tr>
+            <tr>
+                <td>7h</td>
+                <td>Tênis: finais</td>
+            </tr>
+            <tr>
+                <td>7h15</td>
+                <td>Vela</td>
+            </tr>
+            <tr>
+                <td>8h30</td>
+                <td>Tênis de mesa individual feminino: bronze e ouro</td>
+            </tr>
+            <tr>
+                <td>9h</td>
+                <td>Handebol feminino: Brasil x Angola</td>
+            </tr>
+            <tr>
+                <td>9h30</td>
+                <td>Tiro com arco feminino: finais</td>
+            </tr>
+            <tr>
+                <td>10h30</td>
+                <td>Canoagem slalom caiaque cross: Ana Sátila e Pedro Gonçalves</td>
+            </tr>
+            <tr>
+                <td>10h30</td>
+                <td>Ginástica artística solo masculino e feminino: finais</td>
+            </tr>
+            <tr>
+                <td>10h30</td>
+                <td>Ginástica artística cavalo com alças: finais</td>
+            </tr>
+            <tr>
+                <td>11h</td>
+                <td>Judô equipe mista: ouro</td>
+            </tr>
+            <tr>
+                <td>12h30</td>
+                <td>Boxe feminino: bronze</td>
+            </tr>
+            <tr>
+                <td>14h30</td>
+                <td>Atletismo arremesso de peso masculino, salto triplo feminino, 4×400 misto e 100m feminino: final</td>
+            </tr>
+            <tr>
+                <td>15h30</td>
+                <td>Natação: 100m borboleta masculino e 4×100 medley misto: final</td>
+            </tr>
+            <tr>
+                <td>17h</td>
+                <td>Boxe feminino: bronze</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Domingo (4) -->
+<div class="table-container">
+    <h3>Domingo (4)</h3>
+    <table class="table table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Horário</th>
+                <th>Evento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>4h30</td>
+                <td>Tiro com arco: oitavas, quartas, bronze e ouro</td>
+            </tr>
+            <tr>
+                <td>5h</td>
+                <td>Hipismo adestramento: João Victor Oliva</td>
+            </tr>
+            <tr>
+                <td>5h50</td>
+                <td>Badminton masculina e feminina: semifinal e final</td>
+            </tr>
+            <tr>
+                <td>6h50</td>
+                <td>Atletismo</td>
+            </tr>
+            <tr>
+                <td>7h</td>
+                <td>Boxe masculino e feminino: bronze</td>
+            </tr>
+            <tr>
+                <td>7h</td>
+                <td>Tênis: finais</td>
+            </tr>
+            <tr>
+                <td>7h</td>
+                <td>Vela</td>
+            </tr>
+            <tr>
+                <td>8h30</td>
+                <td>Tênis de mesa masculino: bronze e ouro</td>
+            </tr>
+            <tr>
+                <td>9h</td>
+                <td>Ciclismo estrada feminino: Ana Victoria Magalhães</td>
+            </tr>
+            <tr>
+                <td>9h45</td>
+                <td>Tiro com arco masculino: finais</td>
+            </tr>
+            <tr>
+                <td>10h30</td>
+                <td>Canoagem slalom caiaque cross: Ana Sátila e Pedro Gonçalves</td>
+            </tr>
+            <tr>
+                <td>10h40</td>
+                <td>Ginástica artística masculina argolas e salto: final</td>
+            </tr>
+            <tr>
+                <td>10h40</td>
+                <td>Ginástica artística feminina barras assimétricas: final</td>
+            </tr>
+            <tr>
+                <td>14h50</td>
+                <td>Atletismo salto em altura feminino e 100m masculino: final</td>
+            </tr>
+            <tr>
+                <td>16h</td>
+                <td>Vôlei feminino: Brasil x Polônia</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Segunda-feira (5) -->
+<div class="table-container">
+    <h3>Segunda-feira (5)</h3>
+    <table class="table table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Horário</th>
+                <th>Evento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>4h45</td>
+                <td>Badminton feminino: bronze e ouro</td>
+            </tr>
+            <tr>
+                <td>5h</td>
+                <td>Atletismo</td>
+            </tr>
+            <tr>
+                <td>5h</td>
+                <td>Saltos ornamentais feminino: Ingrid Oliveira</td>
+            </tr>
+            <tr>
+                <td>5h</td>
+                <td>Tênis de mesa por equipes</td>
+            </tr>
+            <tr>
+                <td>6h45</td>
+                <td>Ginástica artística masculina barras paralelas: final</td>
+            </tr>
+            <tr>
+                <td>7h</td>
+                <td>Vela</td>
+            </tr>
+            <tr>
+                <td>7h30</td>
+                <td>Ginástica artística feminina trave: final</td>
+            </tr>
+            <tr>
+                <td>7h30</td>
+                <td>Ginástica artística masculina barra fixa: final</td>
+            </tr>
+            <tr>
+                <td>9h</td>
+                <td>Hipismo saltos: Rodrigo Pessoa</td>
+            </tr>
+            <tr>
+                <td>9h20</td>
+                <td>Ginástica artística feminina solo: final</td>
+            </tr>
+            <tr>
+                <td>9h30</td>
+                <td>Badminton masculino: bronze e ouro</td>
+            </tr>
+            <tr>
+                <td>10h</td>
+                <td>Luta feminina: Giullia Penalber</td>
+            </tr>
+            <tr>
+                <td>15h30</td>
+                <td>Atletismo lançamento de disco e 800m feminino: final</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!-- Terça-feira (6) -->
+<div class="table-container">
+    <h3>Terça-feira (6)</h3>
+    <table class="table table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Horário</th>
+                <th>Evento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>5h20</td>
+                <td>Atletismo</td>
+            </tr>
+            <tr>
+                <td>5h30</td>
+                <td>Canoagem de velocidade: Isaquias Queiroz e Jacky Godmann</td>
+            </tr>
+            <tr>
+                <td>5h30</td>
+                <td>Hipismo saltos: final</td>
+            </tr>
+            <tr>
+                <td>7h</td>
+                <td>Vela</td>
+            </tr>
+            <tr>
+                <td>7h30</td>
+                <td>Skate park feminino: Dora Varella, Isadora Pacheco e Raicca Ventura</td>
+            </tr>
+            <tr>
+                <td>9h40</td>
+                <td>Vela: finais</td>
+            </tr>
+            <tr>
+                <td>12h30</td>
+                <td>Skate park feminino: final</td>
+            </tr>
+            <tr>
+                <td>15h15</td>
+                <td>Atletismo salto em distância masculino e 200m feminino: final</td>
+            </tr>
+            <tr>
+                <td>16h30</td>
+                <td>Boxe masculino e feminino: bronze</td>
+            </tr>
+            <tr>
+                <td>18h</td>
+                <td>Boxe feminino: ouro</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Quarta-feira (7) -->
+<div class="table-container">
+    <h3>Quarta-feira (7)</h3>
+    <table class="table table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Horário</th>
+                <th>Evento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2h30</td>
+                <td>Atletismo maratona de marcha atlética mista: Caio Bonfim e Viviane Lyra</td>
+            </tr>
+            <tr>
+                <td>4h30</td>
+                <td>Canoagem de velocidade: Ana Paula Vergutz</td>
+            </tr>
+            <tr>
+                <td>5h</td>
+                <td>Atletismo</td>
+            </tr>
+            <tr>
+                <td>5h40</td>
+                <td>Canoagem de velocidade: Vagner Souta</td>
+            </tr>
+            <tr>
+                <td>6h40</td>
+                <td>Canoagem de velocidade: Isaquias Queiroz e Mateus Nunes</td>
+            </tr>
+            <tr>
+                <td>7h15</td>
+                <td>Vela</td>
+            </tr>
+            <tr>
+                <td>7h30</td>
+                <td>Skate park masculino: Augusto Akio, Luigi Cini e Pedro Barros</td>
+            </tr>
+            <tr>
+                <td>9h40</td>
+                <td>Vela: finais</td>
+            </tr>
+            <tr>
+                <td>12h30</td>
+                <td>Skate park masculino: final</td>
+            </tr>
+            <tr>
+                <td>14h</td>
+                <td>Atletismo salto com vara feminino e 400m masculino: final</td>
+            </tr>
+            <tr>
+                <td>16h30</td>
+                <td>Boxe masculino e feminino: bronze</td>
+            </tr>
+            <tr>
+                <td>17h30</td>
+                <td>Boxe masculino: ouro</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Quinta-feira (8) -->
+<div class="table-container">
+    <h3>Quinta-feira (8)</h3>
+    <table class="table table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Horário</th>
+                <th>Evento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2h30</td>
+                <td>Maratona aquática feminina: Ana Marcela Cunha e Viviane Jungblut</td>
+            </tr>
+            <tr>
+                <td>4h</td>
+                <td>Taekwondo feminino: Maria Clara Pacheco</td>
+            </tr>
+            <tr>
+                <td>4h</td>
+                <td>Taekwondo masculino: Edival Pontes</td>
+            </tr>
+            <tr>
+                <td>5h</td>
+                <td>Ginástica rítmica</td>
+            </tr>
+            <tr>
+                <td>5h30</td>
+                <td>Canoagem de velocidade: Valdenice Conceição</td>
+            </tr>
+            <tr>
+                <td>6h</td>
+                <td>Atletismo</td>
+            </tr>
+            <tr>
+                <td>7h15</td>
+                <td>Vela: finais</td>
+            </tr>
+            <tr>
+                <td>8h20</td>
+                <td>Canoagem de velocidade: final</td>
+            </tr>
+            <tr>
+                <td>9h30</td>
+                <td>Pentatlo moderno feminino esgrima: Isabella Abreu</td>
+            </tr>
+            <tr>
+                <td>15h</td>
+                <td>Atletismo salto em distância feminino, lançamento de dardo, 200m masculino, 400m com barreiras feminino e 110m com barreiras masculino: final</td>
+            </tr>
+            <tr>
+                <td>16h30</td>
+                <td>Boxe masculino e feminino: bronze e ouro</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!-- Sexta-feira (9) -->
+<div class="table-container">
+    <h3>Sexta-feira (9)</h3>
+    <table class="table table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Horário</th>
+                <th>Evento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2h30</td>
+                <td>Maratona aquática masculina: Guilherme Costa</td>
+            </tr>
+            <tr>
+                <td>4h</td>
+                <td>Taekwondo: Caroline Santos</td>
+            </tr>
+            <tr>
+                <td>4h</td>
+                <td>Taekwondo: Henrique Marques</td>
+            </tr>
+            <tr>
+                <td>5h</td>
+                <td>Ginástica rítmica</td>
+            </tr>
+            <tr>
+                <td>5h</td>
+                <td>Saltos ornamentais masculino: Isaac Souza</td>
+            </tr>
+            <tr>
+                <td>5h</td>
+                <td>Tênis de mesa masculino por equipes: bronze</td>
+            </tr>
+            <tr>
+                <td>5h40</td>
+                <td>Atletismo</td>
+            </tr>
+            <tr>
+                <td>8h40</td>
+                <td>Canoagem de velocidade: final</td>
+            </tr>
+            <tr>
+                <td>9h30</td>
+                <td>Ginástica rítmica individual: final</td>
+            </tr>
+            <tr>
+                <td>10h</td>
+                <td>Futebol feminino: bronze</td>
+            </tr>
+            <tr>
+                <td>10h</td>
+                <td>Tênis de mesa masculino por equipes: ouro</td>
+            </tr>
+            <tr>
+                <td>11h</td>
+                <td>Vôlei masculino: bronze</td>
+            </tr>
+            <tr>
+                <td>13h</td>
+                <td>Futebol feminino: ouro</td>
+            </tr>
+            <tr>
+                <td>16h</td>
+                <td>Vôlei de praia feminino: bronze</td>
+            </tr>
+            <tr>
+                <td>16h30</td>
+                <td>Boxe masculino e feminino: ouro</td>
+            </tr>
+            <tr>
+                <td>14h30</td>
+                <td>Atletismo arremesso de peso feminino, salto triplo masculino, 400m feminino, 400m com barreiras masculino, 4x100m masculino e feminino: finais</td>
+            </tr>
+            <tr>
+                <td>17h30</td>
+                <td>Vôlei de praia feminino: ouro</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Sábado (10) -->
+<div class="table-container">
+    <h3>Sábado (10)</h3>
+    <table class="table table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Horário</th>
+                <th>Evento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>3h</td>
+                <td>Atletismo maratona masculina</td>
+            </tr>
+            <tr>
+                <td>4h</td>
+                <td>Taekwondo: Henrique Marques</td>
+            </tr>
+            <tr>
+                <td>5h</td>
+                <td>Handebol feminino: bronze</td>
+            </tr>
+            <tr>
+                <td>5h</td>
+                <td>Tênis de mesa feminino por equipes: bronze</td>
+            </tr>
+            <tr>
+                <td>6h</td>
+                <td>Basquete masculino: bronze</td>
+            </tr>
+            <tr>
+                <td>8h</td>
+                <td>Vôlei masculino: ouro</td>
+            </tr>
+            <tr>
+                <td>9h</td>
+                <td>Ginástica rítmica por equipes: final</td>
+            </tr>
+            <tr>
+                <td>5h</td>
+                <td>Handebol feminino: ouro</td>
+            </tr>
+            <tr>
+                <td>5h</td>
+                <td>Saltos ornamentais masculino: final</td>
+            </tr>
+            <tr>
+                <td>5h</td>
+                <td>Tênis de mesa feminino por equipes: ouro</td>
+            </tr>
+            <tr>
+                <td>11h</td>
+                <td>Levantamento de peso feminino: Laura Amaro</td>
+            </tr>
+            <tr>
+                <td>12h</td>
+                <td>Futebol feminino: ouro</td>
+            </tr>
+            <tr>
+                <td>12h15</td>
+                <td>Vôlei feminino: bronze</td>
+            </tr>
+            <tr>
+                <td>14h10</td>
+                <td>Atletismo salto em altura e revezamento 4×400 masculino, lançamento de dardo feminino: finais</td>
+            </tr>
+            <tr>
+                <td>16h</td>
+                <td>Vôlei de praia masculino: bronze</td>
+            </tr>
+            <tr>
+                <td>16h30</td>
+                <td>Basquete masculino: ouro</td>
+            </tr>
+            <tr>
+                <td>16h30</td>
+                <td>Boxe masculino e feminino: ouro</td>
+            </tr>
+            <tr>
+                <td>17h30</td>
+                <td>Vôlei de praia masculino: ouro</td>
+            </tr>
+        </tbody>
+    </table>
+</div><div class="table-container">
+    <h3>Domingo (11)</h3>
+    <table class="table table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Horário</th>
+                <th>Evento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>6h</td>
+                <td>Pentatlo moderno feminino esgrima: ouro</td>
+            </tr>
+            <tr>
+                <td>6h30</td>
+                <td>Levantamento de peso feminino: Laura Amaro</td>
+            </tr>
+            <tr>
+                <td>8h</td>
+                <td>Vôlei feminino: ouro</td>
+            </tr>
+            <tr>
+                <td>15h</td>
+                <td>Cerimônia de encerramento</td>
+            </tr>
+        </tbody>
+    </table>
