@@ -143,7 +143,7 @@ body {
   color: white;
   text-align: center;
   padding: 20px;
-  margin-top: 20px;
+  margin-top: 2%;
 }
 
 .footer-conteudo {
@@ -170,18 +170,21 @@ body {
 .introducao,.historia,.mudancas,.esportes{
   width: 100%;
   max-width: 1280px;
-  padding-top: 10px;
+  padding-top: 2%;
   box-sizing: border-box;
   margin: 0 auto;
+  
 }
 
 .center{
   width: 100%;
   text-align: center;
+  margin: 0 auto;
 }
 
 .titulo{
   font-family: "Open Sans";
+  margin: 3% 0;
 }
 
 .text,.lista{
@@ -192,8 +195,11 @@ body {
   text-align: center;
 }
 
+.text img{
+  margin-top: 2%;
+}
+
 .lista{
-  margin-top: -10%;
   padding-top: 0;
   width: 100%;
   display: inline-block;
@@ -209,35 +215,24 @@ body {
   height: 100%;
   max-width: 500px;
   max-height: 500px;
-}
-
-.img-text{
-  display: flex;
-  align-items: center;
-  width: 50%;
-  height: 50%;
-  max-width: 1000px;
+  vertical-align: top;
 }
 
 .container-lista{
   width: 100%;
-  margin-top: 10%;
-  margin-bottom: 1%;
 }
 
 .area{
   width: 100%;
-  height: 100%;
   display: inline-block;
   vertical-align: top;
   max-width: 500px;
-  max-height: 714px;
-  margin-right: 25px;
-  padding: 0 20px;
+  padding: 0 4%;
   text-align: justify;
+  margin-left: -4%;
+  background-clip:content-box;
+  margin-top: 2%;
 }
-
-
 
 .sub-titulo{
   display: block;
@@ -248,10 +243,39 @@ body {
 }
 
 .antigamente,.atual{
-  height: 100%;
   width: 100%;
+  text-align: left;
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
+  background-color: white;
+  position: relative;
+  float: left;
+  position: relative;
+  min-height: 250px;
 }
 
 .antigamente h5,.atual h5{
   text-align: center;
+}
+
+.clearfix::after {
+    clear: both
+}
+
+.back{
+  background-color: #ededed;
+}
+
+.div{
+  background-color: #ededed;
+}
+
+@media screen and (max-width: 1006px) {
+  .div{
+      height: 400px; 
+  }
+}
+
+.antigamente li,.atual li{
+  vertical-align:middle;
 }
