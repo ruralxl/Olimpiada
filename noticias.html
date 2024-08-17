@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olimpadas</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/olimpiadaicon.png" type="icon">
+    <style>
+        /* Animação para os cards de notícias */
+        .cardcontainer {
+            display: flex;
+            gap: 20px;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: scroll 30s linear infinite;
+        }
+
+        .card1 {
+            min-width: 300px;
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #fff;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .card1:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        /* Estilização da tabela de medalhas */
+        .table {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .table th,
+        .table td {
+            text-align: center;
+            padding: 15px;
+        }
+
+        .table thead {
+            background-color: #f8f9fa;
+            font-weight: bold;
+        }
+
+        .table tbody tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        .table tbody tr:hover {
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            <img src="img/arcos.png" alt="Logo" style="height: 40px;">
+        </a>
+
+        <!-- Links de Navegação -->
+        <a href="index.html" class="active">Início</a>
+        <a href="historia.html">História</a>
+        <a href="">Eventos</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="formulario.html">Formulário</a>
+
+        <!-- Ícone para versão mobile -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <div class="cardcontainer" style="margin: 30px;">
+        <a href="https://www.uol.com.br/esporte/olimpiadas/ultimas-noticias/2024/08/02/atirador-raiz-turco-medalha-de-prata-viraliza-por-postura.htm" class="cardlink">
+            <div class="card1">
+                <img src="img/turco.png" alt="" class="card-imag">
+                <h2 class="card-titulo">Uol</h2>
+                <p class="card-texto">Quem é o turco que ganhou medalha de prata no tiro ao alvo sem equipamentos?</p>
+            </div>
+        </a>
+        <a href="https://www.opovo.com.br/esportes/paralimpiadas/2024/08/13/paralimpiadas-o-que-sao-onde-surgiu-quem-criou-e-mais-sobre-os-jogos.html" class="cardlink">
+            <div class="card1">
+                <img src="img/logo-paralimpiadas.png" alt="" class="card-imag">
+                <h2 class="card-titulo">Paralimpíadas? O que é isso</h2>
+                <p class="card-texto">Realizados a cada quatro anos como as Olimpíadas, as Paralimpíadas se tornaram um dos maiores eventos esportivos do mundo. Veja mais sobre os Jogos.</p>
+            </div>
+        </a>
+        <a href="https://www.cnnbrasil.com.br/esportes/olimpiadas/rebeca-andrade-conquista-ouro-no-solo-e-se-torna-maior-medalhista-do-brasil-em-olimpiadas/" class="cardlink">
+            <div class="card1">
+                <img src="img/rebeca.jpg" alt="" class="card-imag">
+                <h2 class="card-titulo">CNN Brasil</h2>
+                <p class="card-texto">Rebeca Andrade conquista ouro no solo e se torna maior medalhista do Brasil em Olimpíadas</p>
+            </div>
+        </a>
+        <a href="https://ge.globo.com/olimpiadas/noticia/2024/07/28/rayssa-leal-faz-historia-outra-vez-e-conquista-o-bronze-no-skate-street-das-olimpiadas-de-paris.ghtml" class="cardlink">
+            <div class="card1">
+                <img src="img/rayssa leal.png" alt="" class="card-imag">
+                <h2 class="card-titulo">CNN Brasil</h2>
+                <p class="card-texto">Rayssa Leal conquista bronze no skate street feminino</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="titulo1">
+        <h1>Medalhas</h1>
+    </div>
+
+    <div style="overflow-x:auto;" class="margin">
+        <table class="table table-bordered border-dark table-hover">
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">País</th>
+                    <th scope="col">Medalhas de Bronze 🥉</th>
+                    <th scope="col">Medalhas de Prata 🥈</th>
+                    <th scope="col">Medalhas de Ouro 🥇</th>
+                    <th scope="col">Total 🏅</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Estados Unidos</td>
+                    <td>42</td>
+                    <td>44</td>
+                    <td>40</td>
+                    <td>126</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>China</td>
+                    <td>24</td>
+                    <td>27</td>
+                    <td>40</td>
+                    <td>91</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Japão</td>
+                    <td>13</td>
+                    <td>12</td>
+                    <td>20</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Austrália</td>
+                    <td>16</td>
+                    <td>19</td>
+                    <td>18</td>
+                    <td>53</td>
+                </tr>
+                <tr>
+                    <th scope="row">20</th>
+                    <td>Brasil</td>
+                    <td>10</td>
+                    <td>7</td>
+                    <td>3</td>
+                    <td>20</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-conteudo">
+            <p>&copy; 2024, Olimpíadas França 2024</p>
+            <p> Copyright 2024, todos os direitos reservados</p>
+        </div>
+    </footer>
+</body>
+
+</html>
